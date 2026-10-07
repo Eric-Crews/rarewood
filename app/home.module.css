@@ -1,0 +1,3 @@
+.directory:global(.section) { padding-top: 104px; }
+@media(max-width:900px) { .directory:global(.section) { padding-top: 76px; } }
+@media(max-width:600px) { .directory:global(.section) { padding-top: 60px; } }

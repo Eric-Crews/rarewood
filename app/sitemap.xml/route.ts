@@ -1,0 +1,6 @@
+import {listSpecies} from '@/lib/wood-db';
+import {listProducts,listPosts,listHubs,origin} from '@/lib/db';
+import {listSellProducts} from '@/lib/supplier-db';
+export const dynamic='force-dynamic';
+const escape=(s:string)=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
+export async function GET(){const [products,posts,hubs,sellers,species]=await Promise.all([listProducts(),listPosts(),listHubs(),listSellProducts(),listSpecies()]);const paths=[...['','/species','/categories','/collections','/products','/insights','/request','/sell','/about','/privacy'].map(path=>({path,updated:''})),...species.map(s=>({path:`/species/${s.slug}`,updated:''})),...sellers.map(i=>({path:`/sell/${i.slug}`,updated:''})),...products.map(i=>({path:`/products/${i.slug}`,updated:i.updatedAt})),...hubs.map(p=>({path:`/collections/${p.slug}`,updated:p.updatedAt})),...posts.map(p=>({path:`/insights/${p.slug}`,updated:p.updatedAt}))];return new Response(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${paths.map(r=>`<url><loc>${escape(origin()+r.path)}</loc>${r.updated?`<lastmod>${r.updated.slice(0,10)}</lastmod>`:''}</url>`).join('')}</urlset>`,{headers:{'Content-Type':'application/xml; charset=utf-8','Cache-Control':'no-cache, max-age=0, must-revalidate'}});}

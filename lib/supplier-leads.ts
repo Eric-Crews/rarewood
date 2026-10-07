@@ -1,0 +1,10 @@
+import {z} from 'zod';
+export const supplierUnits=['Board feet','Linear feet','Square feet','Sheets','Slabs','Pieces','Truckloads'] as const;
+export const supplierStatuses=['new','reviewing','assigned','matched','sold','closed'] as const;
+export function normalizePhone(value:string){const trimmed=value.trim();const digits=trimmed.replace(/\D/g,'');if(trimmed.startsWith('+')&&digits.length>=8&&digits.length<=15)return '+'+digits;if(digits.length===10)return '+1'+digits;if(digits.length===11&&digits.startsWith('1'))return '+'+digits;return '';}
+export const supplierLeadSchema=z.object({
+ requestKey:z.string().uuid(),productSlug:z.string().min(2).max(120).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),quantity:z.coerce.number().finite().positive().max(1000000000),unit:z.enum(supplierUnits),location:z.string().trim().min(3).max(200),phone:z.string().trim().max(40).regex(/^[+\d\s().-]+$/,'Enter a phone number, with a country code outside the US or Canada.').transform(normalizePhone).refine(Boolean,'Enter a valid phone number. Include + and the country code outside the US or Canada.'),name:z.string().trim().max(150).default(''),company:z.string().trim().max(200).default(''),email:z.union([z.literal(''),z.string().email().max(254)]).default(''),availability:z.enum(['Ready now','Within 30 days','Discuss timing']),details:z.string().trim().max(4000).default(''),consent:z.literal(true),contactFax:z.string().max(100).default(''),
+});
+export type SupplierStatus=typeof supplierStatuses[number];
+export type SupplierLead={id:string;reference:string;productSlug:string;productName:string;quantity:number;unit:string;location:string;phone:string;name:string;company:string;email:string;availability:string;details:string;status:SupplierStatus;broker:string;notes:string;createdAt:string;updatedAt:string;confirmedAt:string;reviewDueAt:string;};
+export function needsSupplierReconfirmation(lead:SupplierLead,now=Date.now()){return !['sold','closed'].includes(lead.status)&&Date.parse(lead.reviewDueAt)<=now;}

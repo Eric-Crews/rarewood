@@ -1,0 +1,15 @@
+{
+  "mode": "built-in imagegen",
+  "assets": [
+    {
+      "file": "rarewood-workshop-hero.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: original editorial website hero photograph for Rarewood Exchange, an independent specialty lumber brokerage.\nPrimary request: A thoughtfully arranged selection of rich hardwood boards and a striking live-edge slab in a quiet, well-lit timber workshop. This is conceptual illustrative scenery, not a depiction of actual supplier inventory.\nStyle/medium: Sophisticated architectural magazine photography, authentic tactile realism.\nComposition/framing: Wide horizontal 3:2 photograph, generous immersive crop that shows the beauty of the boards and the live-edge slab, carefully composed without feeling staged.\nLighting/mood: Warm natural window light, quiet and inviting.\nColor palette: Deep walnut and honey tones.\nMaterials/textures: Fine visible wood grain, natural edges, varied hardwood surfaces.\nAvoid: People, branding, text, signs, logos, watermarks.",
+      "transparent_background": false
+    },
+    {
+      "file": "rarewood-lumber-engraving.png",
+      "prompt": "Use case: stylized-concept\nAsset type: Original square standalone transparent decorative website illustration for Rarewood Exchange.\nPrimary request: Vintage agricultural/reference-book engraving of an elegant small arrangement of hardwood boards with visible grain and a live-edge slab cross-section.\nStyle/medium: Delicate fine pencil drawing and etched crosshatching, monochrome warm olive-gray #77755c strokes.\nComposition/framing: Square canvas, airy centered composition occupying roughly 75% of the canvas, the complete arrangement visible with breathing room.\nScene/backdrop: Genuine fully transparent background, with transparent empty areas between the objects and behind the fine linework.\nAvoid: Text, borders, paper, background color, heavy fills, cast shadows, logos, watermarks.",
+      "transparent_background": true
+    }
+  ]
+}

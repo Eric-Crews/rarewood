@@ -1,0 +1,37 @@
+{
+  "markets": [
+    {
+      "market": "Wood products",
+      "categories": [
+        {
+          "category": "Exotic lumber"
+        },
+        {
+          "category": "Hardwood decking"
+        },
+        {
+          "category": "Hardwood flooring"
+        },
+        {
+          "category": "Slabs & rounds"
+        },
+        {
+          "category": "Plywood & panels"
+        }
+      ]
+    }
+  ],
+  "seoModifiers": {
+    "buying": [
+      "lumber",
+      "wholesale",
+      "specialty hardwood",
+      "slabs",
+      "decking",
+      "flooring",
+      "plywood",
+      "delivered quote",
+      "board feet"
+    ]
+  }
+}

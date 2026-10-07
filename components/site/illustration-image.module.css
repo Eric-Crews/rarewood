@@ -1,0 +1,4 @@
+.image { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.empty { display: block; width: 100%; height: 100%; aspect-ratio: 1; }
+
+.image{filter:grayscale(1);}

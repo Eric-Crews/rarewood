@@ -1,0 +1,45 @@
+:global(:root) { --site-header-height: 108px; }
+.sticky:global(.site-header) { position: sticky; top: 0; }
+.header:global(.site-header) { height: var(--site-header-height); padding-inline: clamp(32px,4.8vw,80px); gap: 32px; background: #fffefa; }
+.utility:global(.topbar) { padding-inline: clamp(32px,4.8vw,80px); }
+.header :global(.brand) { gap: 14px; }
+.header :global(.brand-mark) { width: 56px; height: 56px; border-color: #c2a34d; }
+.header :global(.brand-mark) svg { width: 32px; height: 32px; }
+.header :global(.brand b) { font-family: Georgia,'Times New Roman',serif; font-size: 1.48rem; font-weight: 600; line-height: 1.18; letter-spacing: -.04em; }
+.header :global(.brand small) { font-size: .6875rem; letter-spacing: .22em; margin-top: 8px; }
+.header :global(.main-nav) { gap: clamp(24px,2.4vw,40px); }
+.header :global(.header-cta) { min-height: 52px; padding: 16px 24px; }
+@media(max-width:1100px) {
+  .header:global(.site-header) { padding-inline: 30px; gap: 20px; }
+  .header :global(.main-nav) { gap: 20px; }
+  .header :global(.header-cta) { padding-inline: 18px; }
+}
+@media(max-width:1250px) {
+  :global(:root) { --site-header-height: 94px; }
+  .header :global(.header-cta) { display: none; }
+  .header :global(.menu-button) { display: flex; align-items: center; justify-content: center; border: 0; background: transparent; padding: 12px; color: var(--green); }
+  .header :global(.main-nav) { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 24px 30px; background: #fffefa; border-bottom: 1px solid var(--line); box-shadow: 0 12px 24px #123b2710; flex-direction: column; align-items: stretch; gap: 18px; }
+  .header :global(.main-nav.open) { display: flex; }
+  .sticky :global(.main-nav) { max-height: calc(100dvh - var(--site-header-height)); overflow-y: auto; overscroll-behavior: contain; }
+  .header :global(.main-nav) > a { font-size: 1rem; padding: 9px 0; }
+  .header :global(.main-nav .mobile-request) { display: flex; color: white; font-size: .9375rem; padding: 16px 22px; }
+}
+@media(max-width:600px) {
+  :global(:root) { --site-header-height: 88px; }
+  .header:global(.site-header) { padding-inline: 20px; gap: 10px; }
+  .utility:global(.topbar) { padding-inline: 18px; }
+  .header :global(.brand) { gap: 10px; }
+  .header :global(.brand-mark) { width: 45px; height: 45px; }
+  .header :global(.brand-mark) svg { width: 28px; height: 28px; }
+  .header :global(.brand b) { font-size: 1.25rem; }
+  .header :global(.brand small) { font-size: .5625rem; letter-spacing: .2em; margin-top: 6px; }
+  .header :global(.menu-button) { padding: 10px; }
+  .header :global(.main-nav) { padding-inline: 24px; }
+}
+@media(max-width:360px) {
+  .header:global(.site-header) { padding-inline: 16px; }
+  .header :global(.brand) { gap: 8px; }
+  .header :global(.brand b) { font-size: 1.125rem; }
+  .header :global(.brand small) { font-size: .5rem; }
+  .header :global(.brand-mark) { width: 40px; height: 40px; }
+}

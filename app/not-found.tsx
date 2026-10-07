@@ -1,0 +1,1 @@
+export default function NotFound(){return <main id="main" className="section empty-page"><span className="eyebrow">PAGE NOT FOUND</span><h1>Let’s find a better starting point.</h1><p>This page is unavailable. Explore the product directory or start a sourcing request.</p><a className="button dark" href="/products">Explore products</a></main>}

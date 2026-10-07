@@ -1,0 +1,8 @@
+import {IllustrationImage} from '@/components/site/illustration-image';
+import {categoryIllustrations} from '@/lib/product-illustrations';
+import artwork from '@/components/site/product-artwork.module.css';
+import {listHubs,listProducts} from '@/lib/db';
+import {belongsToHub} from '@/lib/content-graph';
+export const dynamic='force-dynamic';
+export const metadata={title:'Product Categories & Markets',description:'Browse bulk products by market and category. Find product sourcing pages and supporting buyer Insights.',alternates:{canonical:'/categories'}};
+export default async function Categories(){const [hubs,products]=await Promise.all([listHubs(),listProducts()]);const categories=hubs.filter(h=>h.content.pageType==='category');const roots=categories.filter(h=>!h.content.parentHub);return <main id="main" className="category-directory"><section className="section"><span className="eyebrow">BROWSE BY MARKET</span><h1>Find your category.</h1><p>Explore shared product collections, then open a product for sourcing information and buyer Insights.</p><div className="category-directory-grid">{roots.map(h=><article key={h.id} className={artwork.categoryHub}><div className={artwork.categoryHubArt}><IllustrationImage candidates={categoryIllustrations(h.content.categoryScope?.market||h.title)} sizes="120px"/></div><a href={`/collections/${h.slug}`}><h2>{h.title}</h2><span>{products.filter(i=>belongsToHub(i,h)).length} products</span></a><div>{categories.filter(c=>c.content.parentHub===h.slug).map(c=><a key={c.id} href={`/collections/${c.slug}`}>{c.title}<span>{products.filter(i=>belongsToHub(i,c)).length}</span></a>)}</div></article>)}</div></section></main>;}

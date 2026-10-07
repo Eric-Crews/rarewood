@@ -1,0 +1,741 @@
+[
+  {
+    "slug": "purpleheart-lumber",
+    "name": "Purpleheart Lumber",
+    "category": "Exotic lumber",
+    "summary": "Purpleheart lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Purple Heart"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "wenge-lumber",
+    "name": "Wenge Lumber",
+    "category": "Exotic lumber",
+    "summary": "Wenge lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "zebrawood-lumber",
+    "name": "Zebrawood Lumber",
+    "category": "Exotic lumber",
+    "summary": "Zebrawood lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Zebrano"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "sapele-lumber",
+    "name": "Sapele Lumber",
+    "category": "Exotic lumber",
+    "summary": "Sapele lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "african-mahogany-lumber",
+    "name": "African Mahogany Lumber",
+    "category": "Exotic lumber",
+    "summary": "African Mahogany lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "honduran-mahogany-lumber",
+    "name": "Honduran Mahogany Lumber",
+    "category": "Exotic lumber",
+    "summary": "Honduran Mahogany lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "bolivian-rosewood-lumber",
+    "name": "Bolivian Rosewood Lumber",
+    "category": "Exotic lumber",
+    "summary": "Bolivian Rosewood lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Morado",
+      "Pau Ferro",
+      "Santos Rosewood"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "padauk-lumber",
+    "name": "Padauk Lumber",
+    "category": "Exotic lumber",
+    "summary": "Padauk lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "iroko-lumber",
+    "name": "Iroko Lumber",
+    "category": "Exotic lumber",
+    "summary": "Iroko lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "canarywood-lumber",
+    "name": "Canarywood Lumber",
+    "category": "Exotic lumber",
+    "summary": "Canarywood lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "bubinga-lumber",
+    "name": "Bubinga Lumber",
+    "category": "Exotic lumber",
+    "summary": "Bubinga lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "red-grandis-lumber",
+    "name": "Red Grandis Lumber",
+    "category": "Exotic lumber",
+    "summary": "Red Grandis lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "bloodwood-lumber",
+    "name": "Bloodwood Lumber",
+    "category": "Exotic lumber",
+    "summary": "Bloodwood lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Blood Wood"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "kabukalli-lumber",
+    "name": "Kabukalli Lumber",
+    "category": "Exotic lumber",
+    "summary": "Kabukalli lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "itauba-lumber",
+    "name": "Itauba Lumber",
+    "category": "Exotic lumber",
+    "summary": "Itauba lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "jatoba-lumber",
+    "name": "Jatoba Lumber",
+    "category": "Exotic lumber",
+    "summary": "Jatoba lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Brazilian Cherry"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "utile-lumber",
+    "name": "Utile Lumber",
+    "category": "Exotic lumber",
+    "summary": "Utile lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Sipo"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "spanish-cedar-lumber",
+    "name": "Spanish Cedar Lumber",
+    "category": "Exotic lumber",
+    "summary": "Spanish Cedar lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "ipe-lumber",
+    "name": "Ipe Lumber",
+    "category": "Exotic lumber",
+    "summary": "Ipe lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Brazilian Walnut",
+      "Lapacho"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "cumaru-lumber",
+    "name": "Cumaru Lumber",
+    "category": "Exotic lumber",
+    "summary": "Cumaru lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Brazilian Teak"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "curupixa-lumber",
+    "name": "Curupixa Lumber",
+    "category": "Exotic lumber",
+    "summary": "Curupixa lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "guatambu-lumber",
+    "name": "Guatambu Lumber",
+    "category": "Exotic lumber",
+    "summary": "Guatambu lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Brazilian Maple"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "cerejeira-lumber",
+    "name": "Cerejeira Lumber",
+    "category": "Exotic lumber",
+    "summary": "Cerejeira lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "japanese-cedar-lumber",
+    "name": "Japanese Cedar Lumber",
+    "category": "Exotic lumber",
+    "summary": "Japanese Cedar lumber for furniture & millwork. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Sugi"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "ipe-decking",
+    "name": "Ipe Decking",
+    "category": "Hardwood decking",
+    "summary": "Ipe decking for exterior decking. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Brazilian Walnut",
+      "Lapacho"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood decking"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "garapa-decking",
+    "name": "Garapa Decking",
+    "category": "Hardwood decking",
+    "summary": "Garapa decking for exterior decking. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood decking"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "massaranduba-decking",
+    "name": "Massaranduba Decking",
+    "category": "Hardwood decking",
+    "summary": "Massaranduba decking for exterior decking. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Masaranduba",
+      "Macaranduba"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood decking"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "timborana-flooring",
+    "name": "Timborana Flooring",
+    "category": "Hardwood flooring",
+    "summary": "Timborana flooring for interior flooring. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood flooring"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "ipe-flooring",
+    "name": "Ipe Flooring",
+    "category": "Hardwood flooring",
+    "summary": "Ipe flooring for interior flooring. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Brazilian Walnut",
+      "Lapacho"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood flooring"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "jatoba-flooring",
+    "name": "Jatoba Flooring",
+    "category": "Hardwood flooring",
+    "summary": "Jatoba flooring for interior flooring. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Brazilian Cherry"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood flooring"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "bloodwood-flooring",
+    "name": "Bloodwood Flooring",
+    "category": "Hardwood flooring",
+    "summary": "Bloodwood flooring for interior flooring. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Blood Wood"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood flooring"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "ipe-slabs",
+    "name": "Ipe Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Ipe slabs for tables & countertops. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Brazilian Walnut",
+      "Lapacho"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "jatoba-slabs",
+    "name": "Jatoba Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Jatoba slabs for tables & countertops. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Brazilian Cherry"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "tigerwood-slabs",
+    "name": "Tigerwood Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Tigerwood slabs for tables & countertops. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Goncalo Alves"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "cumaru-slabs",
+    "name": "Cumaru Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Cumaru slabs for tables & countertops. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Brazilian Teak"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "yellowheart-slabs",
+    "name": "Yellowheart Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Yellowheart slabs for tables & countertops. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "angelim-slabs",
+    "name": "Angelim Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Angelim slabs for tables & countertops. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "itauba-slabs",
+    "name": "Itauba Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Itauba slabs for tables & countertops. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "timborana-slabs",
+    "name": "Timborana Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Timborana slabs for tables & countertops. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "cachichira-slabs",
+    "name": "Cachichira Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Cachichira slabs for tables & countertops. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "proposed",
+    "needsClarification": true
+  },
+  {
+    "slug": "bolivian-rosewood-slabs",
+    "name": "Bolivian Rosewood Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Bolivian Rosewood slabs for tables & countertops. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [
+      "Morado",
+      "Pau Ferro",
+      "Santos Rosewood"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "birch-plywood",
+    "name": "Birch Plywood",
+    "category": "Plywood & panels",
+    "summary": "Birch plywood for cabinetry & interiors. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Plywood & panels"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "baltic-birch-plywood",
+    "name": "Baltic Birch Plywood",
+    "category": "Plywood & panels",
+    "summary": "Baltic Birch plywood for cabinetry & interiors. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Plywood & panels"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "meranti-plywood",
+    "name": "Meranti Plywood",
+    "category": "Plywood & panels",
+    "summary": "Meranti plywood for cabinetry & interiors. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Plywood & panels"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "maple-plywood",
+    "name": "Maple Plywood",
+    "category": "Plywood & panels",
+    "summary": "Maple plywood for cabinetry & interiors. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Plywood & panels"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "walnut-plywood",
+    "name": "Walnut Plywood",
+    "category": "Plywood & panels",
+    "summary": "Walnut plywood for cabinetry & interiors. Compare dimensions, material condition and order requirements, then request current pricing for your project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Plywood & panels"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  }
+]

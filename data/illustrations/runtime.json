@@ -1,0 +1,21 @@
+{
+  "asset_base": "/images/wood",
+  "generic_image_id": "lumber-engraving",
+  "families": {
+    "lumber-engraving": {
+      "alt": "Illustration of hardwood boards and a live-edge slab",
+      "status": "ready",
+      "width": 640,
+      "height": 640
+    }
+  },
+  "categories": {
+    "Exotic lumber": "lumber-engraving",
+    "Hardwood decking": "lumber-engraving",
+    "Hardwood flooring": "lumber-engraving",
+    "Slabs & rounds": "lumber-engraving",
+    "Plywood & panels": "lumber-engraving"
+  },
+  "record_assignments": {},
+  "slug_assignments": {}
+}

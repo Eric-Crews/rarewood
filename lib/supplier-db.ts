@@ -1,0 +1,5 @@
+import {db,listStartingProducts} from './db';
+import {canSellProduct,sellProduct} from './supplier-content';
+import type {SupplierLead} from './supplier-leads';
+export async function listSellProducts(){return (await listStartingProducts()).filter(canSellProduct).map(sellProduct);}
+export async function listSupplierLeads(){const {results}=await db().prepare('SELECT id,reference,product_slug,product_name,quantity,unit,location,phone,name,company,email,availability,details,status,broker,notes,created_at,updated_at,confirmed_at,review_due_at FROM supplier_leads ORDER BY created_at DESC LIMIT 1000').all();return results.map(r=>({id:r.id,reference:r.reference,productSlug:r.product_slug,productName:r.product_name,quantity:r.quantity,unit:r.unit,location:r.location,phone:r.phone,name:r.name,company:r.company,email:r.email,availability:r.availability,details:r.details,status:r.status,broker:r.broker,notes:r.notes,createdAt:r.created_at,updatedAt:r.updated_at,confirmedAt:r.confirmed_at,reviewDueAt:r.review_due_at})) as SupplierLead[];}

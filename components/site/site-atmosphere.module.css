@@ -1,0 +1,16 @@
+.frame { position: relative; isolation: isolate; }
+.accents { display: none; }
+@media(min-width:1400px) {
+  .accents { display: block; position: absolute; inset: 0; z-index: 2; pointer-events: none; user-select: none; overflow: hidden; --content-width: 1320px; }
+  .rail { position: absolute; top: 0; bottom: 0; width: min(230px,max(0px,calc((100% - var(--content-width))/2 - 10px))); overflow: hidden; }
+  .left { left: 0; }
+  .right { right: 0; }
+  .rail::before { content: ''; position: absolute; inset: 0; background-repeat: repeat-y; background-size: 230px 690px; opacity: .17; filter: grayscale(1) sepia(.2); }
+  .left::before { background-image: url('/images/wood/lumber-engraving.webp'); background-position: left top; }
+  .right::before { background-image: url('/images/wood/lumber-engraving.webp'); background-position: right 100px; }
+  .frame[data-surface='home'] > .accents { top: 780px; }
+  .frame[data-surface='journal'] > .accents { top: 380px; }
+  /* The About composition uses a wider canvas; keep its artwork outside it. */
+  .frame[data-surface='about'] > .accents { --content-width: 1720px; }
+}
+@media print { .accents { display: none; } }

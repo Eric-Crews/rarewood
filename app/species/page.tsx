@@ -1,0 +1,5 @@
+import {listSpecies} from '@/lib/wood-db';
+import {listProducts} from '@/lib/db';
+export const dynamic='force-dynamic';
+export const metadata={title:'Wood Species',description:'Explore exotic woods and hardwood species by lumber, decking, flooring, slabs and panels.',alternates:{canonical:'/species'}};
+export default async function Species(){const [items,products]=await Promise.all([listSpecies(),listProducts()]);return <main id="main" className="section wood-species-page wood-species-hero"><span className="eyebrow">THE SPECIES LIBRARY</span><h1>Begin with the wood.</h1><p className="wood-intro">Explore the material, then choose the form that fits your project. Each species connects to its product guides and sourcing requests.</p><div className="wood-species-grid">{items.map(s=><a className="wood-species-card" href={`/species/${s.slug}`} key={s.slug}><span className="eyebrow">{products.filter(p=>p.content.speciesSlug===s.slug).length} product forms</span><h2>{s.name}</h2>{s.aliases.length>0&&<p>{s.aliases.join(' · ')}</p>}<span className="text-link">Explore {s.name} →</span></a>)}</div></main>}
