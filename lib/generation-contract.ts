@@ -1,5 +1,6 @@
 import {z} from 'zod';
 import {contentSchema,landingSchema,blogTopicsSchema,blogTopicSchema,slugSchema} from './validation';
+import {applicationInsightMatches} from './application-insights';
 
 const editorialSchema=contentSchema.pick({seoTitle:true,seoDescription:true,sections:true,applications:true,buyingChecklist:true,faqs:true,relatedProducts:true,sourceNotes:true}).extend({summary:z.string().min(10).max(500),slug:slugSchema,category:z.string().min(2).max(80),tags:contentSchema.shape.tags.unwrap(),topics:contentSchema.shape.topics.unwrap(),aliases:contentSchema.shape.aliases.unwrap(),hubSlugs:contentSchema.shape.hubSlugs.unwrap(),parentHub:z.string().max(120)});
 const heroFactsSchema=z.array(z.object({label:z.enum(['Product type','Primary use','Physical forms']),value:z.string().min(2).max(48)})).max(3);
@@ -8,7 +9,7 @@ export const productGenerationSchema=editorialSchema.extend({landingProfile:land
  if(topics.length!==applications.length+3)ctx.addIssue({code:z.ZodIssueCode.custom,message:'Create three core Insights plus one application Insight for each application card.',path:['blogTopics']});
  for(const intent of ['specification','logistics'] as const)if(topics.filter(topic=>topic.intent===intent).length!==1)ctx.addIssue({code:z.ZodIssueCode.custom,message:`Create exactly one ${intent} Insight.`,path:['blogTopics']});
  if(topics.filter(topic=>topic.intent==='application').length!==applications.length+1)ctx.addIssue({code:z.ZodIssueCode.custom,message:'Create one general application Insight plus one for each application card.',path:['blogTopics']});
- for(const application of applications){const label=application.title.trim().toLowerCase();if(topics.filter(topic=>topic.intent==='application'&&`${topic.title} ${topic.brief}`.toLowerCase().includes(label)).length!==1)ctx.addIssue({code:z.ZodIssueCode.custom,message:`Add exactly one distinct application Insight for "${application.title}".`,path:['blogTopics']});}
+ for(const application of applications){if(topics.filter(topic=>topic.intent==='application'&&applicationInsightMatches(topic,application.title)).length!==1)ctx.addIssue({code:z.ZodIssueCode.custom,message:`Add exactly one distinct application Insight for "${application.title}". Copy the application card title into that Insight's title or brief.`,path:['blogTopics']});}
 });
 export const articleGenerationSchema=editorialSchema;
 export const hubGenerationSchema=editorialSchema.extend({sections:contentSchema.shape.sections.min(3).max(5),faqs:contentSchema.shape.faqs.min(4).max(6),applications:contentSchema.shape.applications.max(0),buyingChecklist:contentSchema.shape.buyingChecklist.max(0)});

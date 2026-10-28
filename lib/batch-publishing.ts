@@ -7,6 +7,7 @@ import {batchProductAllowed,productNeedsGeneration,topicArticle,isTaxonomyPage,t
 import {belongsToHub,categoryPeers,primaryProduct} from './content-graph';
 import {isStartingProduct} from './catalog-availability';
 import {recordSchema,blogTopicsSchema} from './validation';
+import {applicationInsightMatches} from './application-insights';
 import type {Product,Content} from './types';
 
 // Called only behind the admin and same-origin checks in the admin action route.
@@ -57,7 +58,7 @@ export async function addApplicationInsightTopics(id:string){
  const applications=item.content.landingProfile?.applications||[];
  if(!applications.length)throw new Error('Add application cards to the product before planning application Insights.');
  const current=item.content.blogTopics||[];
- const covers=(topic:{intent:string;title:string;brief:string},title:string)=>topic.intent==='application'&&`${topic.title} ${topic.brief}`.toLowerCase().includes(title.trim().toLowerCase());
+ const covers=(topic:{intent:string;title:string;brief:string},title:string)=>topic.intent==='application'&&applicationInsightMatches(topic,title);
  const missing=applications.filter(application=>!current.some(topic=>covers(topic,application.title)));
  if(!missing.length){await ensureInsightDrafts([item]);return {id,added:0,topics:current};}
  const posts=await listPosts(true);

@@ -22,29 +22,35 @@ export async function generateContent(input:GenerationInput){
  const config=runtime();
  if(!config.OPENAI_API_KEY)throw new Error('OpenAI is not connected. Add OPENAI_API_KEY as a site secret to enable generation. You can still write and publish content manually.');
  const request=editorialRequest(input);
- const response=await fetch('https://api.openai.com/v1/responses',{
-  method:'POST',
-  headers:{'Content-Type':'application/json',Authorization:`Bearer ${config.OPENAI_API_KEY}`},
-  signal:AbortSignal.timeout(90000),
-  body:JSON.stringify({
-   model:OPENAI_CONTENT_MODEL,
-   store:false,
-   max_output_tokens:14000,
-   instructions:instructionsFor(input),
-   // No tools are declared: page drafting cannot invoke web search or retrieval.
-   input:JSON.stringify({pageType:input.kind,request}),
-   text:{format:{type:'json_schema',name:'rarewood_page_content',strict:true,schema:outputSchema}}
-  })
- });
- if(!response.ok)throw new Error(`OpenAI could not generate this draft (${response.status}). Check the connection and account limits.`);
- const result=await response.json() as {status?:string;output?:{type?:string;content?:{type:string;text?:string;refusal?:string}[]}[]};
- if(result.status==='incomplete')throw new Error('The draft was incomplete. Please retry with a shorter brief.');
- const output=result.output?.flatMap(o=>o.content||[]).filter(c=>c.type==='output_text').map(c=>c.text).join('');
- if(!output)throw new Error('The model did not return a usable draft. Please review the brief and retry.');
- let decoded:unknown;
- try{decoded=JSON.parse(output);}catch{throw new Error('The AI returned unreadable JSON. No changes were saved. Please generate again.');}
- const checked=validator.safeParse(withoutCitationMarkers(decoded));
- if(!checked.success)throw new Error(`The AI draft failed validation: ${checked.error.issues.slice(0,3).map(i=>`${i.path.join('.')}: ${i.message}`).join('; ')}. No changes were saved. Please generate again.`);
+ let checked=validator.safeParse(null),validationIssues:string[]=[];
+ for(let attempt=0;attempt<2;attempt++){
+  const repair=validationIssues.length?`\n\nVALIDATION REPAIR: Your previous draft failed these exact requirements:\n- ${validationIssues.join('\n- ')}\nRevise the complete JSON to satisfy every requirement. Preserve useful valid material, and return the complete object.`:'';
+  const response=await fetch('https://api.openai.com/v1/responses',{
+   method:'POST',
+   headers:{'Content-Type':'application/json',Authorization:`Bearer ${config.OPENAI_API_KEY}`},
+   signal:AbortSignal.timeout(90000),
+   body:JSON.stringify({
+    model:OPENAI_CONTENT_MODEL,
+    store:false,
+    max_output_tokens:14000,
+    instructions:instructionsFor(input)+repair,
+    // No tools are declared: page drafting cannot invoke web search or retrieval.
+    input:JSON.stringify({pageType:input.kind,request}),
+    text:{format:{type:'json_schema',name:'rarewood_page_content',strict:true,schema:outputSchema}}
+   })
+  });
+  if(!response.ok)throw new Error(`OpenAI could not generate this draft (${response.status}). Check the connection and account limits.`);
+  const result=await response.json() as {status?:string;output?:{type?:string;content?:{type:string;text?:string;refusal?:string}[]}[]};
+  if(result.status==='incomplete')throw new Error('The draft was incomplete. Please retry with a shorter brief.');
+  const output=result.output?.flatMap(o=>o.content||[]).filter(c=>c.type==='output_text').map(c=>c.text).join('');
+  if(!output)throw new Error('The model did not return a usable draft. Please review the brief and retry.');
+  let decoded:unknown;
+  try{decoded=JSON.parse(output);}catch{throw new Error('The AI returned unreadable JSON. No changes were saved. Please generate again.');}
+  checked=validator.safeParse(withoutCitationMarkers(decoded));
+  if(checked.success)break;
+  validationIssues=checked.error.issues.slice(0,8).map(i=>`${i.path.join('.')}: ${i.message}`);
+ }
+ if(!checked.success)throw new Error(`The AI draft failed validation after one automatic repair attempt: ${validationIssues.slice(0,3).join('; ')}. No changes were saved. Please generate again.`);
  const {parentHub,...validated}=checked.data;
  const allowedHubs=new Set((input.availableHubs||[]).map(h=>h.slug));
  const parsed=contentSchema.parse({...validated,parentHub:allowedHubs.has(parentHub)?parentHub:undefined,hubSlugs:validated.hubSlugs.filter(s=>allowedHubs.has(s))});
