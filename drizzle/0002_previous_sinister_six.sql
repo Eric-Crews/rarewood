@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `supplier_products_partner_product_unique` ON `supplier_products` (`partner_id`,`product_slug`);

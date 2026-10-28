@@ -2,7 +2,7 @@ import {db,listProducts,listPosts} from './db';
 import {generateEnhanced} from './enhanced-generation';
 import {generateContent} from './generation';
 import {ensureInsightDrafts,ensureTaxonomyDrafts} from './content-drafts';
-import {generateProductTopics} from './topic-generation';
+import {generateProductTopics,generateApplicationInsightTopics} from './topic-generation';
 import {batchProductAllowed,productNeedsGeneration,topicArticle,isTaxonomyPage,taxonomyNeedsGeneration} from './batch-queue';
 import {belongsToHub,categoryPeers,primaryProduct} from './content-graph';
 import {isStartingProduct} from './catalog-availability';
@@ -47,6 +47,31 @@ export async function planBatchTopics(id:string){
  if(!result.meta.changes)throw new Error('The product changed while topics were planned. Newer edits were preserved.');
  await ensureInsightDrafts((await listProducts(true)).filter(row=>row.id===id));
  return {id,topics};
+}
+
+/** Appends missing application-card Insight plans and creates their linked drafts. */
+export async function addApplicationInsightTopics(id:string){
+ const item=(await listProducts(true)).find(row=>row.id===id);
+ if(!item)throw new Error('Product not found.');
+ if(!batchProductAllowed(item))throw new Error('Application Insights are available for approved starting products.');
+ const applications=item.content.landingProfile?.applications||[];
+ if(!applications.length)throw new Error('Add application cards to the product before planning application Insights.');
+ const current=item.content.blogTopics||[];
+ const covers=(topic:{intent:string;title:string;brief:string},title:string)=>topic.intent==='application'&&`${topic.title} ${topic.brief}`.toLowerCase().includes(title.trim().toLowerCase());
+ const missing=applications.filter(application=>!current.some(topic=>covers(topic,application.title)));
+ if(!missing.length){await ensureInsightDrafts([item]);return {id,added:0,topics:current};}
+ const posts=await listPosts(true);
+ const existingTitles=[...current.map(topic=>topic.title),...posts.filter(post=>primaryProduct(post)===item.slug).map(post=>post.title)];
+ const additions=await generateApplicationInsightTopics(item,missing,existingTitles);
+ const topics=blogTopicsSchema.parse([...current,...additions]);
+ const snapshot=await productSnapshot(item);
+ const content={...item.content,blogTopics:topics};
+ recordSchema.parse({...item,kind:'product',content});
+ const result=await db().prepare('UPDATE products SET content=?,updated_at=? WHERE id=? AND status=? AND updated_at=? AND content=?').bind(JSON.stringify(content),new Date().toISOString(),item.id,item.status,snapshot.updated_at,snapshot.content).run();
+ if(!result.meta.changes)throw new Error('The product changed while its application Insights were being added. Newer edits were preserved.');
+ const updated=(await listProducts(true)).find(row=>row.id===id);
+ if(updated)await ensureInsightDrafts([updated]);
+ return {id,added:additions.length,topics};
 }
 
 export async function publishBatchInsight(productId:string,topicSlug:string,publish=true){

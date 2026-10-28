@@ -78,16 +78,17 @@ export default async function Product({params,searchParams}:{params:Promise<{slu
       </div>
     </section>
     {lots.length>0&&<section className="section wood-lots"><span className="eyebrow">RECENTLY CONFIRMED</span><h3>Ask about these available lots.</h3>{lots.map(lot=><div key={String(lot.id)} className="wood-lot"><b>{String(lot.quantity)} {String(lot.unit)}</b><span>{String(lot.dimensions)} · {String(lot.location)}</span><small>Supplier reference {String(lot.reference)} · Confirmed {String(lot.confirmed_at).slice(0,10)}</small><a className="text-link" href="#quote">Request lot pricing</a></div>)}<p>Final allocation and specifications are confirmed with your quote.</p></section>}
-    {canSellProduct(r)&&<div className="seller-crosslink"><span>Have {name.toLowerCase()} available?</span><a className="text-link" href={`/sell/${r.slug}`}>Submit your inventory for free</a></div>}
+    {canSellProduct(r)&&<div className="seller-crosslink"><span>Have {name} available?</span><a className="text-link" href={`/sell/${r.slug}`}>Submit your inventory for free</a></div>}
 
     <nav className="product-v2-subnav" aria-label="Product page sections"><span>{r.name} sourcing brief</span><div><a href="#product-details">Overview</a>{profile&&profile.specifications.rows.length>0&&<a href="#specifications">Specifications</a>}<a href="#applications">Applications</a>{profile&&profile.shipping.length>0&&<a href="#delivery">Delivery</a>}{faqs.length>0&&<a href="#questions">FAQ</a>}</div><a href="#quote">Build a request <ArrowRight size={14}/></a></nav>
 
-    {r.content.speciesSlug&&<div className="section wood-species-link"><a href={`/species/${r.content.speciesSlug}`}>Explore the species and other product forms →</a></div>}<PageTaxonomy content={r.content} category={r.category}/><section className="product-section section product-v2-overview" id="product-details">
-      {r.image&&<figure className="managed-product-image"><img width={1200} height={400} loading="lazy" decoding="async" src={r.image} alt={r.content.imageAlt||name}/>{r.imageCredit&&<figcaption>{r.imageCredit.split(" · ")[0]}</figcaption>}</figure>}
-      <div className="product-section-heading"><div><span className="eyebrow">ABOUT THE PRODUCT</span><h2>{`About ${r.name.toLowerCase()}`}</h2></div><div className={artwork.overviewArt}><IllustrationImage candidates={productIllustrations(r)} decorative={false} sizes="128px"/></div></div>
+    <section className="product-section section product-v2-overview" id="product-details">
+      <div className="product-section-heading"><div><span className="eyebrow">ABOUT THE PRODUCT</span><h2>{`About ${name}`}</h2></div><div className={artwork.overviewArt}><IllustrationImage candidates={productIllustrations(r)} decorative={false} sizes="128px"/></div></div>
       <div className="product-overview">{(profile?.overview||r.content.sections.flatMap(s=>s.paragraphs).slice(0,2)).map((paragraph,index)=><div key={paragraph}><span>0{index+1}</span><p>{paragraph}</p></div>)}</div>
       <div className="product-benefit-grid" data-count={profile?.benefits.length||0}>{(profile?.benefits||[]).map((item,index)=><article key={item.title}><span>{index===0?<BarChart3/>:index===1?<FileCheck2/>:<Truck/>}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
+      {r.image&&<figure className="managed-product-image"><img width={1200} height={400} loading="lazy" decoding="async" src={r.image} alt={r.content.imageAlt||name}/>{r.imageCredit&&<figcaption>{r.imageCredit.split(" · ")[0]}</figcaption>}</figure>}
     </section>
+    {r.content.speciesSlug&&<div className="section wood-species-link"><a href={`/species/${r.content.speciesSlug}`}>Explore the species and other product forms →</a></div>}<PageTaxonomy content={r.content} category={r.category}/>
 
     {profile&&profile.specifications.rows.length>0?<section className="product-section product-section-tint" id="specifications"><div className="section product-spec-layout">
       <div><span className="eyebrow">SPECIFICATIONS</span><h2>{r.name} specifications.</h2><table className="product-spec-table"><caption>{profile.specifications.caption}</caption><thead><tr>{profile.specifications.columns.map(column=><th key={column}>{column}</th>)}</tr></thead><tbody>{profile.specifications.rows.map(row=><tr key={row[0]}>{row.map((cell,index)=>index===0?<th scope="row" key={cell}>{cell}</th>:<td key={`${row[0]}-${cell}`}>{cell}</td>)}</tr>)}</tbody></table><p className="product-spec-note">{profile.specifications.note}</p></div>
@@ -96,7 +97,7 @@ export default async function Product({params,searchParams}:{params:Promise<{slu
 
     {r.content.customLayout&&r.content.sections.length>2&&<section className="section"><ContentBody content={{...r.content,sections:r.content.sections.slice(2),faqs:[],buyingChecklist:[]}}/></section>}
     <section className="product-section section" id="applications">
-      <div className="product-section-heading"><div><span className="eyebrow">APPLICATIONS</span><h2>{`Common uses for ${r.name.toLowerCase()}.`}</h2></div></div>
+      <div className="product-section-heading"><div><span className="eyebrow">APPLICATIONS</span><h2>{`Common uses for ${name}.`}</h2></div></div>
       <div className="product-application-grid">{(profile?.applications||r.content.applications.map(item=>({title:item,text:''}))).map((item,index)=><article key={item.title}><span>0{index+1}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
     </section>
 
@@ -108,8 +109,8 @@ export default async function Product({params,searchParams}:{params:Promise<{slu
 
     <ProductInsights posts={articles} name={name}/>
 
-    {faqs.length>0&&<section className="product-section product-section-tint" id="questions"><div className="section product-faq-layout"><div><span className="eyebrow">COMMON QUESTIONS</span><h2>{`${r.name} sourcing questions.`}</h2></div><div className="faq-list">{faqs.map(f=><details key={f.question}><summary>{f.question}<span>+</span></summary><p>{f.answer}</p></details>)}</div></div></section>}
+    {faqs.length>0&&<section className="product-section product-section-tint" id="questions"><div className="section product-faq-layout"><div><span className="eyebrow">COMMON QUESTIONS</span><h2>{`${name} sourcing questions.`}</h2></div><div className="faq-list">{faqs.map(f=><details key={f.question}><summary>{f.question}<span>+</span></summary><p>{f.answer}</p></details>)}</div></div></section>}
 
-    <section className="product-final"><div><span className="eyebrow">START WITH A CLEAR BRIEF</span><h2>{`Ready to source ${r.name.toLowerCase()}?`}</h2><p>Send your volume, destination, and key specifications. A broker can follow up with availability and commercial terms.</p></div><a className="button lime" href="#quote">Request pricing & availability <ArrowRight size={16}/></a></section>
+    <section className="product-final"><div><span className="eyebrow">START WITH A CLEAR BRIEF</span><h2>{`Ready to source ${name}?`}</h2><p>Send your volume, destination, and key specifications. A broker can follow up with availability and commercial terms.</p></div><a className="button lime" href="#quote">Request pricing & availability <ArrowRight size={16}/></a></section>
   </main>;
 }

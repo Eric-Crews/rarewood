@@ -1,4 +1,4 @@
-export const categories = ['Exotic lumber', 'Hardwood decking', 'Hardwood flooring', 'Slabs & rounds', 'Plywood & panels'] as const;
+export const categories = ['Domestic hardwood lumber', 'Domestic lumber', 'Custom wood products', 'Siding & cladding', 'Specialty wood products', 'Mill by-products', 'Exotic lumber', 'Hardwood decking', 'Hardwood flooring', 'Slabs & rounds', 'Plywood & panels'] as const;
 export type Section = { heading: string; paragraphs: string[] };
 export type CatalogPlacement = {market:string;category:string};
 export type BlogTopic={slug:string;title:string;intent:"specification"|"application"|"logistics";targetKeyword:string;brief:string};

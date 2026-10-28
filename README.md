@@ -9,7 +9,7 @@ This is a **separate application**, derived from a source snapshot of Bulk Ag Ex
 - 46 starter product records across exotic lumber, decking, flooring, slabs, and plywood. 45 guides are available in the private preview; Cachichira slabs remain a future/draft product pending identity clarification.
 - 36 wood species records (35 published, one awaiting clarification). Each species links to its product forms.
 - Six collection hubs: the wood-products parent and five product categories. Category scopes are unique.
-- Three original starter Insights. Each approved product contains three distinct supporting article plans: specifications, applications, and logistics. Opening the admin synchronizes missing plans into drafts without replacing edited content.
+- Three original starter Insights. Each approved product contains three core supporting article plans—specifications, general applications, and logistics—plus one application-specific Insight plan for every product application card. Opening the admin synchronizes missing plans into drafts without replacing edited content.
 - JSON content owns the hero, facts, overview, benefits, specification table, applications, three ordering/delivery points, FAQs, related products, tags, topics, and SEO fields. React owns layout.
 - `data/product-record.example.json` and `lib/generation-contract.ts` use Ipe decking as the concrete model response example. Zod and strict JSON Schema share the same limits.
 - Product guides describe sourcing considerations, not confirmed stock. Supplier lots live separately and are public only when marked available with a quantity and confirmed within seven days.
@@ -41,7 +41,7 @@ Sourcing operations support supply-partner records, lot confirmation, partner as
 
 No previous API keys or OAuth settings were copied.
 
-- OpenAI: a Rarewood server-side `OPENAI_API_KEY` enables generation, fixed to `gpt-6-luna`. Product, Insight, and taxonomy generation use structured responses without web-search tool calls. The admin remains usable for manual publishing while disconnected.
+- OpenAI: a Rarewood server-side `OPENAI_API_KEY` enables structured page generation with `gpt-5-mini`. Product, Insight, topic-plan, tag, and category drafts use richer page-type prompts and do not call web search or retrieval tools. The admin remains usable for manual publishing while disconnected.
 - Pexels: optional `PEXELS_API_KEY`. Local image uploads use Rarewood's own R2 bucket.
 - Gmail: configure a new OAuth web client in admin with this site's origins. The lead composer selects an active supply partner and shows the recipient and PDF before sending. No email is sent by assigning a partner or saving a lead.
 - Freight: Warp booking/integration is not connected. Record the agreed carrier reference and tracking URL manually.

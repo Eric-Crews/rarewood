@@ -2,7 +2,7 @@ import {isStartingProduct} from './catalog-availability';
 import type {Product,Post,BlogTopic} from './types';
 
 export const batchProductAllowed=(item:Product)=>isStartingProduct(item)&&!item.content.needsClarification;
-export const productNeedsGeneration=(item:Product)=>!item.content.generatedAt&&!item.content.landingProfile&&!item.content.customLayout;
+export const productNeedsGeneration=(item:Product)=>item.content.generationState==='planned'||(!item.content.generatedAt&&!item.content.landingProfile&&!item.content.customLayout);
 export const pendingBatchProducts=(items:Product[])=>items.filter(item=>batchProductAllowed(item)&&item.status==='draft');
 export const isTaxonomyPage=(post:Post)=>['tag','topic','category'].includes(post.content.pageType||'');
 export const taxonomyNeedsGeneration=(post:Post)=>post.content.generationState==='planned'||(!post.content.generatedAt&&!post.content.customLayout&&post.content.generationState!=='ready');

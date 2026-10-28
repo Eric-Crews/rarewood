@@ -9,12 +9,13 @@ import {brokerEmailDraft,bytesBase64,gmailComposeUrl,PRIMARY_BROKER,type BrokerL
 import {loadGmailClient,connectGmail,currentGmailConnection,forgetGmailConnection,type GmailConnection} from '@/lib/gmail-client';
 
 type Delivery={status:string;attempt_id:string;sender:string;recipient:string;subject:string;attachment_name:string;updated_at:string;gmail_message_id:string};
-type Recipient={id:string;name:string;company:string;email:string};
+type Recipient={id:string;name:string;company:string;email:string;productSlugs:string[]};
+type CatalogProduct={slug:string;name:string};
 type MailResponse={brokers?:Recipient[];clientId:string;delivery:Delivery|null;sent?:boolean;error?:string};
 type Props=BrokerLead&{disabled?:boolean;dirty?:boolean;onSent?:()=>void|Promise<void>;onBusyChange?:(busy:boolean)=>void};
 const done=(delivery:Delivery|null)=>!!delivery&&['sent','confirmed'].includes(delivery.status);
 export function BrokerEmail(props:Props){
- const [brokers,setBrokers]=useState<Recipient[]>([]),[recipientId,setRecipientId]=useState('');
+ const [brokers,setBrokers]=useState<Recipient[]>([]),[catalogProducts,setCatalogProducts]=useState<CatalogProduct[]>([]),[recipientId,setRecipientId]=useState('');
  const recipient=brokers.find(b=>b.id===recipientId);
  const initial=brokerEmailDraft(props),notesId=useId(),confirmId=useId();
  const [open,setOpen]=useState(false),[subject,setSubject]=useState(initial.subject),[body,setBody]=useState(initial.body),[notes,setNotes]=useState(false);
@@ -36,7 +37,7 @@ export function BrokerEmail(props:Props){
  useEffect(()=>{
   if(!open)return;let active=true;
   setError('');setConfigLoaded(false);setStatusLoaded(false);setCheckedSent(false);
-  Promise.all([fetch('/api/admin/broker-email/config',{cache:'no-store'}).then(async response=>{const data=await response.json() as MailResponse;if(!response.ok)throw new Error(data.error||'Unable to load Gmail settings.');if(active){setClientId(data.clientId);setClientDraft(data.clientId);setBrokers(data.brokers||[]);setRecipientId(current=>current||(data.brokers?.[0]?.id||''));setConfigLoaded(true);}}),status()]).catch(cause=>{if(active)setError(cause.message);});
+  Promise.all([fetch('/api/admin/broker-email/config',{cache:'no-store'}).then(async response=>{const data=await response.json() as MailResponse&{products:CatalogProduct[]};if(!response.ok)throw new Error(data.error||'Unable to load Gmail settings.');if(active){setClientId(data.clientId);setClientDraft(data.clientId);setBrokers(data.brokers||[]);setCatalogProducts(data.products||[]);setRecipientId(current=>current||(data.brokers?.[0]?.id||''));setConfigLoaded(true);}}),status()]).catch(cause=>{if(active)setError(cause.message);});
   return()=>{active=false;};
  },[open,key]);
  useEffect(()=>{if(!open||!clientId)return;let active=true;setGoogleReady(false);loadGmailClient().then(()=>{if(active)setGoogleReady(true);}).catch(cause=>{if(active)setError(cause.message);});return()=>{active=false;};},[open,clientId]);
@@ -69,7 +70,7 @@ export function BrokerEmail(props:Props){
  }
  return <div className="broker-email-action"><button type="button" className="button dark" disabled={props.disabled||props.dirty} onClick={()=>setOpen(true)}>{done(delivery)?<Check size={16}/>:<Mail size={16}/>} {done(delivery)?'View broker email':'Send to broker'}</button>{props.dirty&&<small>Save your lead changes before sending.</small>}{done(delivery)&&<small>Sent to {delivery!.recipient} · {new Date(delivery!.updated_at).toLocaleString()}</small>}
  <Dialog open={open} onOpenChange={value=>{if(!busy)setOpen(value);}}><DialogContent className="broker-email-dialog"><DialogHeader><DialogTitle>{done(delivery)?'Broker email sent':'Send this lead to a supply partner'}</DialogTitle><DialogDescription>{props.lead.reference} · {props.kind==='buyer'?'Buyer sourcing request':'Seller inventory inquiry'}</DialogDescription></DialogHeader>
- <div className="broker-email-recipient"><span>TO</span>{done(delivery)?<b>{delivery!.recipient}</b>:<label className="field"><span>Supply partner</span><select value={recipientId} disabled={!!busy||uncertain} onChange={e=>setRecipientId(e.target.value)}><option value="">Choose a partner</option>{brokers.map(b=><option key={b.id} value={b.id}>{b.company} · {b.name} · {b.email}</option>)}</select><small>Add or edit recipients under Sourcing operations → Supply partners.</small></label>}</div>
+ <div className="broker-email-recipient"><span>TO</span>{done(delivery)?<b>{delivery!.recipient}</b>:<label className="field"><span>Supply partner</span><select value={recipientId} disabled={!!busy||uncertain} onChange={e=>setRecipientId(e.target.value)}><option value="">Choose a partner</option>{brokers.map(b=>{const productName=props.kind==='buyer'?props.lead.product:props.lead.productName;const match=catalogProducts.find(item=>item.name.toLowerCase()===productName.toLowerCase());return <option key={b.id} value={b.id}>{b.company} · {b.name}{match&&b.productSlugs.includes(match.slug)?' · carries this product':''} · {b.email}</option>;})}</select><small>Suppliers marked “carries this product” are mapped to this catalog item. Confirm stock and pricing directly before quoting.</small></label>}</div>
  {error&&<p className="form-error" role="alert">{error}</p>}{notice&&<p className="admin-notice" role="status">{notice}</p>}
  {done(delivery)?<section className="broker-email-confirmation"><Check size={26}/><h3>{delivery!.status==='confirmed'?'You confirmed this email was sent.':'Gmail confirmed this email was sent.'}</h3><p>From {delivery!.sender}<br/>{new Date(delivery!.updated_at).toLocaleString()}</p><p><b>{delivery!.subject}</b></p><p><Paperclip size={16}/> {delivery!.attachment_name}</p><a href="https://mail.google.com/mail/#sent" target="_blank" rel="noreferrer" className="text-link">Open Gmail Sent <ExternalLink size={14}/></a></section>:<>
  <label className="field"><span>Subject</span><input value={subject} maxLength={200} disabled={!!busy||uncertain} onChange={event=>setSubject(event.target.value)}/></label><label className="field"><span>Note to supplier</span><textarea rows={12} value={body} maxLength={12000} disabled={!!busy||uncertain} onChange={event=>setBody(event.target.value)}/></label>

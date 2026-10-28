@@ -67,7 +67,7 @@
 .productCard > a:focus-visible { outline-offset: -4px; }
 .cardCategory { font-size: .75rem; color: #63715e; text-transform: uppercase; letter-spacing: .09em; line-height: 1.45; }
 .cardArt { display: flex; align-items: center; justify-content: flex-end; height: 106px; margin: 3px 0 9px; color: #84906c; }
-.cardArt img { width: 115px; height: 106px; object-fit: contain; opacity: .46; }
+.cardArt img { width: 115px; height: 106px; object-fit: contain; opacity: 1; }
 .cardArt > svg { height: 86px; width: 100px; opacity: .42; }
 .hasPhoto { margin-top: 12px; }
 .hasPhoto img { width: 100%; height: 100%; object-fit: cover; opacity: 1; border-radius: 4px; }
@@ -109,7 +109,7 @@
 .productCard > a { position: relative; padding: 24px 20px; }
 .cardCategory { padding-right: 106px; margin-bottom: 14px; min-height: 22px; }
 .cardArt { position: absolute; right: 18px; top: 18px; width: 92px; height: 96px; margin: 0; }
-.cardArt img { width: 92px; height: 96px; object-fit: contain; opacity: .76; }
+.cardArt img { width: 92px; height: 96px; object-fit: contain; opacity: 1; }
 .cardHeading { padding-right: 100px; min-height: 72px; margin-bottom: 18px; }
 .cardHeading h3 { font-size: 1.75rem; line-height: 1.13; overflow-wrap: break-word; }
 .cardContent > p { -webkit-line-clamp: 3; font-size: 1rem; line-height: 1.65; }

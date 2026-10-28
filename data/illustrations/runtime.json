@@ -7,15 +7,112 @@
       "status": "ready",
       "width": 640,
       "height": 640
+    },
+    "hardwood-assortment": {
+      "alt": "Illustrative assortment of specialty hardwood lumber boards; not a supplier lot",
+      "status": "ready",
+      "width": 640,
+      "height": 640
+    },
+    "hardwood-decking": {
+      "alt": "Illustrative hardwood decking boards; not a supplier lot",
+      "status": "ready",
+      "width": 640,
+      "height": 640
+    },
+    "hardwood-flooring": {
+      "alt": "Illustrative hardwood flooring planks; not a supplier lot",
+      "status": "ready",
+      "width": 640,
+      "height": 640
+    },
+    "slabs-rounds": {
+      "alt": "Illustrative live-edge slabs and wood rounds; not specific inventory",
+      "status": "ready",
+      "width": 640,
+      "height": 640
+    },
+    "plywood-panels": {
+      "alt": "Illustrative plywood and veneer panels; not a supplier lot",
+      "status": "ready",
+      "width": 640,
+      "height": 640
+    },
+    "purpleheart-lumber": {
+      "alt": "Illustrative Purpleheart lumber boards; not a supplier lot",
+      "status": "ready",
+      "width": 640,
+      "height": 640
+    },
+    "wenge-lumber": {
+      "alt": "Illustrative Wenge lumber boards; not a supplier lot",
+      "status": "ready",
+      "width": 640,
+      "height": 640
+    },
+    "zebrawood-lumber": {
+      "alt": "Illustrative Zebrawood lumber boards; not a supplier lot",
+      "status": "ready",
+      "width": 640,
+      "height": 640
+    },
+    "sapele-lumber": {
+      "alt": "Illustrative Sapele lumber boards; not a supplier lot",
+      "status": "ready",
+      "width": 640,
+      "height": 640
+    },
+    "african-mahogany-lumber": {
+      "alt": "Illustrative African Mahogany lumber boards; not a supplier lot",
+      "status": "ready",
+      "width": 640,
+      "height": 640
+    },
+    "honduran-mahogany-lumber": {
+      "alt": "Illustrative Honduran Mahogany lumber boards; not a supplier lot",
+      "status": "ready",
+      "width": 640,
+      "height": 640
     }
   },
   "categories": {
-    "Exotic lumber": "lumber-engraving",
-    "Hardwood decking": "lumber-engraving",
-    "Hardwood flooring": "lumber-engraving",
-    "Slabs & rounds": "lumber-engraving",
-    "Plywood & panels": "lumber-engraving"
+    "Exotic lumber": "hardwood-assortment",
+    "Hardwood decking": "hardwood-decking",
+    "Hardwood flooring": "hardwood-flooring",
+    "Slabs & rounds": "slabs-rounds",
+    "Plywood & panels": "plywood-panels",
+    "Custom wood products": "slabs-rounds",
+    "Siding & cladding": "hardwood-assortment",
+    "Specialty wood products": "hardwood-assortment",
+    "Domestic hardwood lumber": "hardwood-assortment",
+    "Domestic lumber": "hardwood-assortment",
+    "Mill by-products": "slabs-rounds"
   },
   "record_assignments": {},
-  "slug_assignments": {}
+  "slug_assignments": {
+    "purpleheart-lumber": {
+      "image_id": "purpleheart-lumber",
+      "level": "specific"
+    },
+    "wenge-lumber": {
+      "image_id": "wenge-lumber",
+      "level": "specific"
+    },
+    "zebrawood-lumber": {
+      "image_id": "zebrawood-lumber",
+      "level": "specific"
+    },
+    "sapele-lumber": {
+      "image_id": "sapele-lumber",
+      "level": "specific"
+    },
+    "african-mahogany-lumber": {
+      "image_id": "african-mahogany-lumber",
+      "level": "specific"
+    },
+    "honduran-mahogany-lumber": {
+      "image_id": "honduran-mahogany-lumber",
+      "level": "specific"
+    }
+  }
 }

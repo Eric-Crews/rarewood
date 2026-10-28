@@ -25,7 +25,7 @@ export async function GET(request:Request,{params}:{params:Promise<{operation:st
  try{await requireAdmin();}catch{return reply({error:'Administrator access is required.'},403);}
  try{
   const {operation}=await params;
-  if(operation==='config'){await ensureSeed();const {results}=await db().prepare("SELECT id,name AS company,contact AS name,email FROM supply_partners WHERE active=1 AND email<>'' ORDER BY name").all();return reply({clientId:await clientId(),brokers:results});}
+  if(operation==='config'){await ensureSeed();const [{results},coverage,products]=await Promise.all([db().prepare("SELECT id,name AS company,contact AS name,email FROM supply_partners WHERE active=1 AND email<>'' ORDER BY name").all(),db().prepare('SELECT partner_id,product_slug FROM supplier_products').all(),(await import('@/lib/db')).listProducts(true)]);const mapped=new Map<string,string[]>();for(const row of coverage.results as {partner_id:string;product_slug:string}[]){const slugs=mapped.get(row.partner_id)||[];slugs.push(row.product_slug);mapped.set(row.partner_id,slugs);}return reply({clientId:await clientId(),brokers:(results as {id:string}[]).map(item=>({...item,productSlugs:mapped.get(item.id)||[]})),products:products.map(item=>({slug:item.slug,name:item.name}))});}
   if(operation==='status'){
    const parsed=leadInput.safeParse(Object.fromEntries(new URL(request.url).searchParams));
    if(!parsed.success)return reply({error:'Choose a lead.'},400);

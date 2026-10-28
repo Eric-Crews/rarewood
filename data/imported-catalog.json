@@ -737,5 +737,1063 @@
     ],
     "sourceStatus": "current",
     "needsClarification": false
+  },
+  {
+    "slug": "custom-wood-countertops-tabletops",
+    "name": "Custom Wood Countertops & Tabletops",
+    "category": "Custom wood products",
+    "summary": "Request a custom Appalachian hardwood countertop or tabletop, including live-edge and glued-up designs. Share the finished dimensions, species preference, edge profile, and project use for a supplier-checked quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Custom wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "custom-appalachian-hardwood-flooring",
+    "name": "Custom Appalachian Hardwood Flooring",
+    "category": "Hardwood flooring",
+    "summary": "Source unfinished solid Appalachian hardwood flooring by species, width, length schedule, and project area. Request a quote with subfloor, finish, and delivery requirements; current species and milling options are confirmed per order.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood flooring"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "custom-wood-siding",
+    "name": "Custom Wood Siding",
+    "category": "Siding & cladding",
+    "summary": "Explore custom-milled regional hardwood siding for interior or exterior projects. Share wall exposure, profile, dimensions, and finish plan so a supplier can confirm species, milling, and suitability for the application.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Siding & cladding"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "wood-wall-cladding",
+    "name": "Wood Wall Cladding",
+    "category": "Siding & cladding",
+    "summary": "Request wood wall cladding for an interior accent wall or architectural feature. Compare species, profile, board coverage, and finish; softwood options and order details depend on supplier confirmation.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Siding & cladding"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "custom-wood-stair-treads",
+    "name": "Custom Wood Stair Treads",
+    "category": "Custom wood products",
+    "summary": "Request custom hardwood stair treads sized to your staircase. Share tread width, depth, thickness, nosing, species, glue-up preference, and quantity for a supplier-checked quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Custom wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "custom-wood-mantels",
+    "name": "Custom Wood Mantels",
+    "category": "Custom wood products",
+    "summary": "Source a custom wood mantel in a species, profile, and size suited to your fireplace or feature wall. Share finished dimensions, natural-edge preference, mounting details, and finish plan for a quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Custom wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "yellow-pine-heart-pine-flooring",
+    "name": "Yellow Pine & Heart Pine Flooring",
+    "category": "Hardwood flooring",
+    "summary": "Request tongue-and-groove yellow pine or new heart pine flooring in a project-specific width and length mix. Share coverage, finish preference, and destination; the available source and schedule are confirmed per order.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood flooring"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "wood-timbers",
+    "name": "Wood Timbers",
+    "category": "Specialty wood products",
+    "summary": "Request custom-order timbers for a build, entry, beam, or architectural accent. Provide species, dimensions, quantity, finish or moisture requirements, and delivery access for source confirmation.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Specialty wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "cedar-cypress-boards",
+    "name": "Cedar & Cypress Boards",
+    "category": "Specialty wood products",
+    "summary": "Request cedar or cypress boards for an interior or exterior accent project. Share species, dimensions, profile, exposure, finish, and quantity to confirm the appropriate source and quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Specialty wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "walnut-lumber",
+    "name": "Walnut Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request walnut lumber for furniture, cabinetry, millwork, or a related project. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; species, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "cherry-lumber",
+    "name": "Cherry Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request cherry lumber for furniture, cabinetry, millwork, or a related project. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; species, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "red-oak-lumber",
+    "name": "Red Oak Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request red oak lumber for furniture, cabinetry, millwork, or a related project. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; species, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "white-oak-lumber",
+    "name": "White Oak Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request white oak lumber for furniture, cabinetry, millwork, or a related project. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; species, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "poplar-lumber",
+    "name": "Poplar Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request poplar lumber for furniture, cabinetry, millwork, or a related project. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; species, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "ambrosia-maple-lumber",
+    "name": "Ambrosia Maple Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request ambrosia maple lumber for furniture, cabinetry, millwork, or a related project. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; species, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "soft-maple-lumber",
+    "name": "Soft Maple Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request soft maple lumber for furniture, cabinetry, millwork, or a related project. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; species, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "sycamore-lumber",
+    "name": "Sycamore Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request sycamore lumber for furniture, cabinetry, millwork, or a related project. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; species, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "ash-lumber",
+    "name": "Ash Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request ash lumber for furniture, cabinetry, millwork, or a related project. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; species, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "white-pine-lumber",
+    "name": "White Pine Lumber",
+    "category": "Domestic lumber",
+    "summary": "Request white pine lumber for furniture, cabinetry, millwork, or a related project. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; species, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "wood-shavings-sawdust",
+    "name": "Wood Shavings & Sawdust",
+    "category": "Mill by-products",
+    "summary": "Ask about wood shavings or sawdust generated by regional milling operations. Material type, cleanliness, moisture, packaging, quantity, and permitted uses vary by lot and must be confirmed before pickup or delivery.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Mill by-products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "sawmill-slab-piles-offcuts",
+    "name": "Sawmill Slab Piles & Offcuts",
+    "category": "Mill by-products",
+    "summary": "Request mixed slab piles and sawmill offcuts for fencing or other reuse projects. Piece size, species mix, bark, condition, volume, loading, and current availability vary by lot; confirm details before arranging pickup.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Mill by-products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "shop-bundles-mill-offcuts",
+    "name": "Shop Bundles & Mill Offcuts",
+    "category": "Mill by-products",
+    "summary": "Explore shop bundles of mill offcuts for kindling or small reuse projects. Bundle size, species mix, treatment status, piece dimensions, and availability vary; confirm the lot and intended-use suitability first.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Mill by-products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "alder-lumber",
+    "name": "Alder Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request Alder lumber for cabinetry and casework, paint-grade millwork and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "anigre-lumber",
+    "name": "Anigre Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Anigre lumber for furniture and casework, interior millwork and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "aromatic-cedar-lumber",
+    "name": "Aromatic Cedar Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request Aromatic Cedar lumber for closet and storage lining, interior paneling and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "basswood-lumber",
+    "name": "Basswood Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request Basswood lumber for carving and turning, paint-grade millwork and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "beech-lumber",
+    "name": "Beech Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request Beech lumber for furniture and casework, flooring and interior components and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [
+      "European Beech"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "bocote-lumber",
+    "name": "Bocote Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Bocote lumber for furniture accents, turning and small objects and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "brazilian-chestnut-sucupira-lumber",
+    "name": "Brazilian Chestnut (Sucupira) Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Brazilian Chestnut (Sucupira) lumber for furniture and casework, flooring and interior millwork and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [
+      "Sucupira"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "chechen-lumber",
+    "name": "Chechen Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Chechen lumber for furniture and casework, turning and small objects and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "cocobolo-lumber",
+    "name": "Cocobolo Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Cocobolo lumber for turning and small objects, instrument components and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "gaboon-ebony-lumber",
+    "name": "Gaboon Ebony Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Gaboon Ebony lumber for turning and small objects, instrument details and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [
+      "African Ebony"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "hickory-lumber",
+    "name": "Hickory Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request Hickory lumber for furniture and casework, flooring and interior components and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "honduran-rosewood-lumber",
+    "name": "Honduran Rosewood Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Honduran Rosewood lumber for turning and small objects, instrument components and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "indian-rosewood-lumber",
+    "name": "Indian Rosewood Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Indian Rosewood lumber for instrument components, furniture and casework and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [
+      "East Indian Rosewood"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "katalox-lumber",
+    "name": "Katalox Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Katalox lumber for turning and small objects, flooring and interior accents and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "macassar-ebony-lumber",
+    "name": "Macassar Ebony Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Macassar Ebony lumber for instrument components, turning and small objects and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "makore-lumber",
+    "name": "Makore Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Makore lumber for furniture and casework, interior millwork and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "peruvian-walnut-lumber",
+    "name": "Peruvian Walnut Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Peruvian Walnut lumber for furniture and casework, tables and interior millwork and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "redheart-lumber",
+    "name": "Redheart Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Redheart lumber for turning and small objects, furniture accents and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "santos-mahogany-cabreuva-lumber",
+    "name": "Santos Mahogany (Cabreuva) Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Santos Mahogany (Cabreuva) lumber for flooring and interior components, furniture and casework and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [
+      "Cabreuva"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "south-american-lacewood-lumber",
+    "name": "South American Lacewood Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request South American Lacewood lumber for furniture accents, cabinetry and decorative panels and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [
+      "Lacewood"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "spanish-walnut-parota-lumber",
+    "name": "Spanish Walnut (Parota) Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Spanish Walnut (Parota) lumber for tables and furniture, casework and interior millwork and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [
+      "Parota"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "teak-lumber",
+    "name": "Teak Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Teak lumber for furniture and casework, marine and interior joinery and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [
+      "Burmese Teak",
+      "Plantation Teak"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "ziricote-lumber",
+    "name": "Ziricote Lumber",
+    "category": "Exotic lumber",
+    "summary": "Request Ziricote lumber for instrument components, turning and small objects and related projects. Specify rough or surfaced condition, dimensions, quantity, and acceptable appearance; exact material, current lot, and pricing are confirmed by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Exotic lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "antique-reclaimed-beams",
+    "name": "Antique Reclaimed Beams",
+    "category": "Specialty wood products",
+    "summary": "Source antique reclaimed beams for mantels, exposed ceilings, and architectural features. Specify solid or non-structural box construction, finish, species preference, dimensions, quantity, and delivery needs; confirm each lot by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Specialty wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "reclaimed-timber-frame-trusses",
+    "name": "Reclaimed Timber Frame Trusses",
+    "category": "Specialty wood products",
+    "summary": "Coordinate reclaimed timber trusses and framing for a custom building project. Share the design stage, structural drawings, dimensions, species preferences, joinery scope, and delivery site; engineering, fabrication, and installation are confirmed separately.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Specialty wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "antique-reclaimed-solid-plank-flooring",
+    "name": "Antique Reclaimed Solid-Plank Flooring",
+    "category": "Hardwood flooring",
+    "summary": "Request reclaimed solid-plank flooring by wood type, surface character, dimensions, and project quantity. Options listed by the source include antique heart pine, oak, wormy chestnut, mixed hardwoods, hemlock, factory maple, hickory, and reclaimed oak.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood flooring"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "specialty-new-solid-plank-flooring",
+    "name": "Specialty New Solid-Plank Flooring",
+    "category": "Hardwood flooring",
+    "summary": "Compare specialty new solid-plank flooring by species, grade, cut, finish, and dimensions. The supplier lists European and rustic white oak, prime and quartersawn new heart pine, and salvaged white oak as options.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood flooring"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "custom-engineered-wood-flooring",
+    "name": "Custom Engineered Wood Flooring",
+    "category": "Hardwood flooring",
+    "summary": "Request engineered flooring with a reclaimed or specialty wood face. Specify face material, dimensions, prefinished or unfinished condition, substrate requirements, and project environment; confirm construction and installation compatibility with the supplier and installer.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Hardwood flooring"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "reclaimed-wall-ceiling-planking",
+    "name": "Reclaimed Wall & Ceiling Planking",
+    "category": "Siding & cladding",
+    "summary": "Source reclaimed wall and ceiling planking by material, original surface, color, and profile. Options listed include weathered barn siding, original-face barnwood, antique oak, chestnut, heart pine, cypress, hemlock, reclaimed oak, and new white oak planking.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Siding & cladding"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "antique-reclaimed-brick",
+    "name": "Antique Reclaimed Brick",
+    "category": "Reclaimed building materials",
+    "summary": "Request reclaimed antique brick by project use, quantity, dimensions, shape, color range, and condition. Confirm the available lot, cleaning, pallet quantity, transport, and suitability for the intended installation.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Reclaimed building materials"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "reclaimed-stair-parts",
+    "name": "Reclaimed Stair Parts",
+    "category": "Custom wood products",
+    "summary": "Request custom reclaimed stair parts by component, species, stair geometry, dimensions, finish, and quantity. Supplier-listed work includes handrails, newel posts, treads, and other custom millwork; drawings and field measurements are essential.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Custom wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "reclaimed-wood-mantels",
+    "name": "Reclaimed Wood Mantels",
+    "category": "Custom wood products",
+    "summary": "Request a reclaimed mantel by fireplace dimensions, mounting method, wood preference, surface character, and finish. Options shown include hand-hewn, original-face, solid reclaimed oak, and live-edge styles; verify installation and clearance requirements with your contractor.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Custom wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "hard-maple-lumber",
+    "name": "Hard Maple Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request hard maple lumber for furniture, cabinetry, and shop projects. Specify 4/4 or 8/4 thickness, required lengths and usable widths, surfaced condition, board-foot quantity, and delivery needs; confirm the exact offer by quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "pecan-live-edge-slabs",
+    "name": "Pecan Live Edge Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Request a pecan live-edge slab by finished project dimensions, natural edge, thickness, and quantity. Each slab is a distinct piece; confirm its current photos, measurements, condition, flattening options, and delivery quote.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "monkey-pod-live-edge-slabs",
+    "name": "Monkey Pod Live Edge Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Source a monkey pod live-edge slab for a one-piece table, bar top, desk, or island. Specify exact slab, finished dimensions, flattening and finish needs, and delivery; piece-level availability is confirmed by quote.",
+    "aliases": [
+      "Monkeypod"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "deodar-cedar-slabs",
+    "name": "Deodar Cedar Slabs",
+    "category": "Slabs & rounds",
+    "summary": "Request a Deodar cedar slab by piece, dimensions, edge, and project use. Confirm the slab’s current measurements and condition, any flattening or finishing, and whether pickup, local delivery, or freight is available.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Slabs & rounds"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "mulberry-lumber",
+    "name": "Mulberry Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request mulberry lumber as an occasional specialty species. Share the intended use, dimensions, quantity, and acceptable alternatives; confirm the exact species, current availability, and price before planning the project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "osage-orange-lumber",
+    "name": "Osage Orange Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request osage orange lumber as an occasional specialty species. Share the intended use, dimensions, quantity, and acceptable alternatives; confirm the exact species, current availability, and price before planning the project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "elm-lumber",
+    "name": "Elm Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request elm lumber as an occasional specialty species. Share the intended use, dimensions, quantity, and acceptable alternatives; confirm the exact species, current availability, and price before planning the project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "sweetgum-lumber",
+    "name": "Sweetgum Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request sweetgum lumber as an occasional specialty species. Share the intended use, dimensions, quantity, and acceptable alternatives; confirm the exact species, current availability, and price before planning the project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "locust-lumber",
+    "name": "Locust Lumber",
+    "category": "Domestic hardwood lumber",
+    "summary": "Request locust lumber as an occasional specialty species. Share the intended use, dimensions, quantity, and acceptable alternatives; confirm the exact species, current availability, and price before planning the project.",
+    "aliases": [],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Domestic hardwood lumber"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "spalted-wood-burls",
+    "name": "Spalted Wood & Burls",
+    "category": "Specialty wood products",
+    "summary": "Request spalted wood or burl material by species, form, figure, dimensions, and project use. These specialty pieces are variable and may be intermittent; confirm the specific lot, condition, and usable area before planning around it.",
+    "aliases": [
+      "Spalted lumber",
+      "Burl wood"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Specialty wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "mountain-laurel-sticks",
+    "name": "North Carolina Mountain Laurel Sticks",
+    "category": "Specialty wood products",
+    "summary": "Request North Carolina mountain laurel in small bundled stick lots. Confirm the current bundle, piece lengths, condition, quantity, and intended use before purchase; this is a specialty material rather than dimensional lumber.",
+    "aliases": [
+      "Mountain Laurel",
+      "NC Mountain Laurel",
+      "Mountain Laurel bundle"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Specialty wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "premium-turning-carving-cutoffs",
+    "name": "Premium Turning & Carving Cutoffs",
+    "category": "Mill by-products",
+    "summary": "Request small hardwood cutoffs for turning, carving, and other compact workshop projects. Supplier listings describe assorted exotic and premium domestic species, plus mixed domestic cutoffs; species, sizes, and quantity vary and must be confirmed for each lot.",
+    "aliases": [
+      "Turning cutoffs",
+      "Carving cutoffs",
+      "Small stock"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Mill by-products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "reclaimed-oak-barnwood-lumber",
+    "name": "Reclaimed 4/4 Oak Barnwood Lumber",
+    "category": "Reclaimed building materials",
+    "summary": "Request reclaimed 4/4 oak barnwood listed as kiln sanitized and de-nailed. Confirm actual board dimensions, grade, condition, usable yield, quantity, current price, and delivery terms for the specific lot.",
+    "aliases": [
+      "4/4 Oak Barnwood",
+      "Oak barnwood",
+      "Reclaimed oak lumber"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Reclaimed building materials"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
+  },
+  {
+    "slug": "steel-table-bases-mantle-brackets",
+    "name": "Steel Table Bases & Mantle Brackets",
+    "category": "Custom wood products",
+    "summary": "Source table base sets and mantle brackets as complementary hardware for custom slab and mantel projects. Available styles and dimensions vary; confirm the specific base or bracket, mounting requirements, finish, compatibility, price, and fulfillment before ordering.",
+    "aliases": [
+      "Steel table bases",
+      "Mantle brackets",
+      "Furniture hardware"
+    ],
+    "placements": [
+      {
+        "market": "Wood products",
+        "category": "Custom wood products"
+      }
+    ],
+    "sourceStatus": "current",
+    "needsClarification": false
   }
 ]

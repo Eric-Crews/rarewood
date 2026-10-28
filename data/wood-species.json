@@ -278,5 +278,258 @@
     "aliases": [],
     "summary": "Explore walnut by product form. Compare relevant lumber, decking, flooring or slab pages and request a quote for your required dimensions.",
     "status": "published"
+  },
+  {
+    "slug": "alder",
+    "name": "Alder",
+    "aliases": [],
+    "summary": "Explore alder by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "anigre",
+    "name": "Anigre",
+    "aliases": [],
+    "summary": "Explore anigre by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "aromatic-cedar",
+    "name": "Aromatic Cedar",
+    "aliases": [],
+    "summary": "Explore aromatic cedar by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "basswood",
+    "name": "Basswood",
+    "aliases": [],
+    "summary": "Explore basswood by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "beech",
+    "name": "Beech",
+    "aliases": [
+      "European Beech"
+    ],
+    "summary": "Explore beech by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "bocote",
+    "name": "Bocote",
+    "aliases": [],
+    "summary": "Explore bocote by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "brazilian-chestnut",
+    "name": "Brazilian Chestnut",
+    "aliases": [
+      "Sucupira"
+    ],
+    "summary": "Explore brazilian chestnut by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "chechen",
+    "name": "Chechen",
+    "aliases": [],
+    "summary": "Explore chechen by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "cocobolo",
+    "name": "Cocobolo",
+    "aliases": [],
+    "summary": "Explore cocobolo by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "gaboon-ebony",
+    "name": "Gaboon Ebony",
+    "aliases": [
+      "African Ebony"
+    ],
+    "summary": "Explore gaboon ebony by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "hickory",
+    "name": "Hickory",
+    "aliases": [],
+    "summary": "Explore hickory by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "honduran-rosewood",
+    "name": "Honduran Rosewood",
+    "aliases": [],
+    "summary": "Explore honduran rosewood by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "indian-rosewood",
+    "name": "Indian Rosewood",
+    "aliases": [
+      "East Indian Rosewood"
+    ],
+    "summary": "Explore indian rosewood by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "katalox",
+    "name": "Katalox",
+    "aliases": [],
+    "summary": "Explore katalox by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "macassar-ebony",
+    "name": "Macassar Ebony",
+    "aliases": [],
+    "summary": "Explore macassar ebony by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "makore",
+    "name": "Makore",
+    "aliases": [],
+    "summary": "Explore makore by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "peruvian-walnut",
+    "name": "Peruvian Walnut",
+    "aliases": [],
+    "summary": "Explore peruvian walnut by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "redheart",
+    "name": "Redheart",
+    "aliases": [],
+    "summary": "Explore redheart by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "santos-mahogany",
+    "name": "Santos Mahogany",
+    "aliases": [
+      "Cabreuva"
+    ],
+    "summary": "Explore santos mahogany by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "south-american-lacewood",
+    "name": "South American Lacewood",
+    "aliases": [
+      "Lacewood"
+    ],
+    "summary": "Explore south american lacewood by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "spanish-walnut",
+    "name": "Spanish Walnut",
+    "aliases": [
+      "Parota"
+    ],
+    "summary": "Explore spanish walnut by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "teak",
+    "name": "Teak",
+    "aliases": [
+      "Burmese Teak",
+      "Plantation Teak"
+    ],
+    "summary": "Explore teak by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "ziricote",
+    "name": "Ziricote",
+    "aliases": [],
+    "summary": "Explore ziricote by product form. Review lumber dimensions, condition, appearance, and sourcing details, then request a quote for your project.",
+    "status": "published"
+  },
+  {
+    "slug": "hard-maple",
+    "name": "Hard Maple",
+    "aliases": [],
+    "summary": "Explore hard maple by product form. Confirm the exact species, dimensions, condition, current availability, and price for the item offered.",
+    "status": "published"
+  },
+  {
+    "slug": "pecan",
+    "name": "Pecan",
+    "aliases": [],
+    "summary": "Explore pecan by product form. Confirm the exact species, dimensions, condition, current availability, and price for the item offered.",
+    "status": "published"
+  },
+  {
+    "slug": "monkey-pod",
+    "name": "Monkey Pod",
+    "aliases": [
+      "Monkeypod"
+    ],
+    "summary": "Explore monkey pod by product form. Confirm the exact species, dimensions, condition, current availability, and price for the item offered.",
+    "status": "published"
+  },
+  {
+    "slug": "deodar-cedar",
+    "name": "Deodar Cedar",
+    "aliases": [],
+    "summary": "Explore deodar cedar by product form. Confirm the exact species, dimensions, condition, current availability, and price for the item offered.",
+    "status": "published"
+  },
+  {
+    "slug": "mulberry",
+    "name": "Mulberry",
+    "aliases": [],
+    "summary": "Explore mulberry by product form. Confirm the exact species, dimensions, condition, current availability, and price for the item offered.",
+    "status": "published"
+  },
+  {
+    "slug": "osage-orange",
+    "name": "Osage Orange",
+    "aliases": [],
+    "summary": "Explore osage orange by product form. Confirm the exact species, dimensions, condition, current availability, and price for the item offered.",
+    "status": "published"
+  },
+  {
+    "slug": "elm",
+    "name": "Elm",
+    "aliases": [],
+    "summary": "Explore elm by product form. Confirm the exact species, dimensions, condition, current availability, and price for the item offered.",
+    "status": "published"
+  },
+  {
+    "slug": "sweetgum",
+    "name": "Sweetgum",
+    "aliases": [],
+    "summary": "Explore sweetgum by product form. Confirm the exact species, dimensions, condition, current availability, and price for the item offered.",
+    "status": "published"
+  },
+  {
+    "slug": "locust",
+    "name": "Locust",
+    "aliases": [],
+    "summary": "Explore locust by product form. Confirm the exact species, dimensions, condition, current availability, and price for the item offered.",
+    "status": "published"
+  },
+  {
+    "slug": "mountain-laurel",
+    "name": "Mountain Laurel",
+    "aliases": [
+      "Kalmia latifolia",
+      "NC Mountain Laurel"
+    ],
+    "summary": "Explore mountain laurel as a specialty small-stock material. Confirm species identification, bundle dimensions, condition, and current availability for the specific lot.",
+    "status": "published"
   }
 ]

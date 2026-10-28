@@ -1,6 +1,8 @@
 import products from '@/data/wood-products.json';
 import type {Product,Post,Content} from './types';
-export const seedProducts=products as Product[];
+// AI-planned catalog additions enter as drafts so the admin's OpenAI queue
+// generates and publishes their full page before they appear publicly.
+export const seedProducts=products.map(product=>({...product,status:product.content.generationState==='planned'?'draft':product.status})) as Product[];
 const date='2026-10-07T17:43:00.000Z';
 function article(slug:string,title:string,summary:string,parent:string,sections:Content['sections']):Post{return {id:'journal-'+slug,slug,title,summary,category:'Wood buying guide',image:'',imageCredit:'',status:'published',createdAt:date,updatedAt:date,content:{pageType:'article',primaryProduct:parent,seoTitle:title+' | Rarewood Exchange',seoDescription:summary,sections,applications:[],buyingChecklist:[],faqs:[],relatedProducts:[parent],sourceNotes:'',generationState:'ready',tags:['Wood sourcing'],topics:['Planning a lumber order']}};}
 export const seedPosts:Post[]=[

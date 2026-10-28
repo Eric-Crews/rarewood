@@ -8,6 +8,20 @@
       "when": 1791397160281,
       "tag": "0000_plain_madame_web",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793221286045,
+      "tag": "0001_awesome_devos",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793221299393,
+      "tag": "0002_previous_sinister_six",
+      "breakpoints": true
     }
   ]
 }

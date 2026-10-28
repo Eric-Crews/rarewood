@@ -2,7 +2,7 @@ import type {Product,CatalogPlacement} from './types';
 export type DirectoryProduct={id:string;slug:string;name:string;category:string;summary:string;image:string;imageAlt:string;status:string;aliases:string[];placements:CatalogPlacement[]};
 export type DirectoryHub={slug:string;market:string;category:string};
 export type DirectorySort='name-asc'|'name-desc'|'category';
-export const featuredCategories=['Exotic lumber','Hardwood decking','Slabs & rounds','Hardwood flooring','Plywood & panels'];
+export const featuredCategories=['Domestic hardwood lumber','Custom wood products','Hardwood flooring','Siding & cladding','Specialty wood products','Exotic lumber','Hardwood decking','Slabs & rounds','Plywood & panels','Mill by-products'];
 export const categoryLabel=(category:string)=>category.replaceAll('/', ' / ');
 // The browser needs card fields, not stored research, source notes, or draft bodies.
 export function directoryProduct(item:Product):DirectoryProduct{

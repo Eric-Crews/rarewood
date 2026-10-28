@@ -8,6 +8,7 @@
 .stats b { font-size: 1.75rem; font-weight: 500; }
 .stats span { color: var(--gray); font-size: .875rem; }
 .stats a { margin-left: auto; display: flex; gap: 10px; align-items: center; font-size: .875rem; text-decoration: underline; }
+.stats a + a { margin-left: 0; }
 .filters { display: flex; gap: 20px; align-items: end; margin-bottom: 25px; }
 .filters > label:first-child { flex: 1; }
 .filters > label { margin-bottom: 0; }
